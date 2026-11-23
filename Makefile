@@ -3,17 +3,24 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lbraga-m <lbraga-m@student.42.fr>          +#+  +:+       +#+         #
+#    By: lbraga-m <lbraga-m@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/22 17:26:23 by lbraga-m          #+#    #+#              #
-#    Updated: 2026/11/22 22:14:34 by lbraga-m         ###   ########.fr        #
+#    Updated: 2026/11/23 21:12:50 by lbraga-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRCS = ft_putchar.c
+SRCS =  ft_printf.c  \
+		ft_putchar.c \
+		ft_putstr.c  \
+		ft_putnbr.c  \
+		ft_putunbr.c \
+		ft_puthex.c  \
+		ft_putptr.c  \
+		
 
 OBJS = $(SRCS:.c=.o)
 
