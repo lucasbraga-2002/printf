@@ -6,7 +6,7 @@
 /*   By: lbraga-m <lbraga-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/22 20:16:38 by lbraga-m          #+#    #+#             */
-/*   Updated: 2026/11/23 20:06:36 by lbraga-m         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:52:04 by lbraga-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ static int	ft_format(char c, va_list *args)
 	if (c == 'u')
 		return (ft_putunbr(va_arg (*args, unsigned int)));
 	if (c == 'x')
-		return (ft_puthex(va_arg (*args, unsigned int)));
+		return (ft_puthex(va_arg (*args, unsigned int), "0123456789abcdef"));
 	if (c == 'X')
-		return (ft_puthex(va_arg (*args, unsigned int)));
+		return (ft_puthex(va_arg (*args, unsigned int), "0123456789ABCDEF"));
 	if (c == '%')
 		return (ft_putchar('%'));
 	return (0);

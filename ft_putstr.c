@@ -6,7 +6,7 @@
 /*   By: lbraga-m <lbraga-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/23 18:14:01 by lbraga-m          #+#    #+#             */
-/*   Updated: 2026/11/23 21:04:15 by lbraga-m         ###   ########.fr       */
+/*   Updated: 2026/11/24 17:48:30 by lbraga-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putstr(char *s)
 	int	result;
 
 	i = 0;
-	if (s == NULL)
+	if (!s)
 		s = "(null)";
 	while (s[i] != '\0')
 	{
